@@ -8,7 +8,7 @@ class Splash extends StatelessWidget {
   Splash({super.key}) {
     Timer(const Duration(seconds: 2), () {
       Get.offAll(
-        const Login(),
+        () => const Login(),
         transition: Transition.rightToLeft,
       );
     });
