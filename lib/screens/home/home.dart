@@ -3,7 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:zappe/components/datetime_picker.dart';
 import 'package:zappe/contexts/controller.dart';
-import 'package:zappe/pages/home/home_page.dart';
+import 'package:zappe/pages/pages/home_page.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
