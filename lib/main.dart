@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:zappe/components/shop_listile.dart';
 import 'package:zappe/contexts/controller.dart';
-import 'package:zappe/screens/home/home.dart';
-import 'package:zappe/screens/shop/shops.dart';
+import 'package:zappe/pages/home_page.dart';
 // import 'package:zappe/screens/splash/splash.dart';
 
 void main() {
@@ -18,7 +16,7 @@ void main() {
         Get.put(Controller());
       }),
       // home: Splash(),
-      home: const Shops(),
+      home: const HomePage(),
     ),
   );
 }
