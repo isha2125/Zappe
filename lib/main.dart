@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:zappe/contexts/controller.dart';
-import 'package:zappe/screens/home/home.dart';
-// import 'package:zappe/screens/splash/splash.dart';
+import 'package:zappe/pages/home_page.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,7 +15,7 @@ void main() {
         Get.put(Controller());
       }),
       // home: Splash(),
-      home: const Home(),
+      home: const HomePage(),
     ),
   );
 }
