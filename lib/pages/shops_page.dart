@@ -9,19 +9,24 @@ class shop extends StatelessWidget {
   //int indexs = 2;
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 2,
+      length: 3,
       child: NestedScrollView(
-        headerSliverBuilder: (context, innerBoxIsScrolled) => [
-          SliverAppBar(
-            backgroundColor: Colors.black,
-            title: Text("Shop_Name"),
-          )
-        ],
-        body: CustomTabBar(),
-        // body: ListView.builder(itemBuilder: (context, index) {
-        //   return ListTile(title: Text("bike"));
-        // }),
-      ),
+          headerSliverBuilder: (context, innerBoxIsScrolled) => [
+                SliverAppBar(
+                  backgroundColor: Colors.black,
+                  title: Text("Shop_Name"),
+                )
+              ],
+          body: CustomScrollView(slivers: [
+            SliverToBoxAdapter(
+              child: CustomTabBar(),
+            ),
+            SliverList(delegate: SliverChildBuilderDelegate((context, index) {
+              return ListTile(
+                title: Text("hello"),
+              );
+            })),
+          ])),
     );
   }
 }
@@ -31,23 +36,32 @@ class CustomTabBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 200, //AppBar().preferredSize.height,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(8),
-        color: Color(0xff979797),
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Container(
+        height: MediaQuery.of(context).size.height *
+            0.08, //AppBar().preferredSize.height,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(50),
+          color: Color(0xffD9D9D9),
+        ),
+        child: TabBar(
+            labelColor: Colors.black,
+            indicator: BoxDecoration(
+                borderRadius: BorderRadius.circular(50),
+                color: Color(0xff97979799)),
+            tabs: [
+              Tab(
+                text: "Scooties",
+              ),
+              Tab(
+                text: "Bikes",
+              ),
+              Tab(
+                text: "Cars",
+              )
+            ]),
       ),
-      child: TabBar(tabs: [
-        Tab(
-          text: "Scooties",
-        ),
-        Tab(
-          text: "Bikes",
-        ),
-        Tab(
-          text: "Cars",
-        )
-      ]),
     );
   }
 }
