@@ -81,10 +81,10 @@ class Home extends StatelessWidget {
         SliverToBoxAdapter(
           child: BannerPageView(banners: banners),
         ),
-        const SliverAppBar(
+        SliverAppBar(
           backgroundColor: Colors.white,
           elevation: 0,
-          title: Text(
+          title: const Text(
             'Shops',
             style: TextStyle(
               fontSize: 24,
@@ -94,8 +94,9 @@ class Home extends StatelessWidget {
           ),
           centerTitle: false,
           pinned: true,
-          shadowColor: Colors.black,
+          shadowColor: Colors.black.withOpacity(0.2),
           surfaceTintColor: Colors.transparent,
+          automaticallyImplyLeading: false,
         ),
         SliverList(
           delegate: SliverChildBuilderDelegate(
