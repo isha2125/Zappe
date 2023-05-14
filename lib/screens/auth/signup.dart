@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:zappe/screens/auth/login.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Signup extends StatelessWidget {
@@ -21,7 +20,7 @@ class Signup extends StatelessWidget {
             width: MediaQuery.of(context).size.width,
           ),
         ),
-        Positioned(
+        const Positioned(
           top: 170,
           left: 40,
           child: Text(
@@ -171,14 +170,14 @@ class Signup extends StatelessWidget {
                   left: 159,
                   child: MaterialButton(
                     onPressed: () {},
-                    color: Color.fromARGB(255, 69, 131, 154),
+                    color: const Color.fromARGB(255, 69, 131, 154),
                     textColor: Colors.white,
-                    padding:
-                        EdgeInsets.symmetric(vertical: 9, horizontal: 52.5),
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 9, horizontal: 52.5),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    child: Text(
+                    child: const Text(
                       'Sign Up',
                       style: TextStyle(fontSize: 14),
                     ),
@@ -191,8 +190,8 @@ class Signup extends StatelessWidget {
                     onPressed: () {},
                     color: Colors.white,
                     textColor: Colors.blue,
-                    padding: EdgeInsets.all(7.5),
-                    shape: CircleBorder(),
+                    padding: const EdgeInsets.all(7.5),
+                    shape: const CircleBorder(),
                     child: Image.asset(
                       'assets/g_logo.png',
                       height: 27.5,
@@ -206,8 +205,8 @@ class Signup extends StatelessWidget {
                     onPressed: () {},
                     color: Colors.white,
                     textColor: Colors.blue,
-                    padding: EdgeInsets.all(7.5),
-                    shape: CircleBorder(),
+                    padding: const EdgeInsets.all(7.5),
+                    shape: const CircleBorder(),
                     child: Image.asset(
                       'assets/apple_logo.png',
                       height: 27.5,

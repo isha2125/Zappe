@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
 class ReferalPage extends StatelessWidget {
+  const ReferalPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Referrals & Vouchers',
           style: TextStyle(
             color: Colors.black,
@@ -18,8 +20,8 @@ class ReferalPage extends StatelessWidget {
         toolbarHeight: 90.0,
       ),
       body: Container(
-        color: Color(0xFF98D5E4),
-        padding: EdgeInsets.all(25.0),
+        color: const Color(0xFF98D5E4),
+        padding: const EdgeInsets.all(25.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
@@ -33,7 +35,7 @@ class ReferalPage extends StatelessWidget {
                   filled: true,
                   fillColor: Colors.white,
                   hintText: 'Do you have any referrals ?',
-                  prefixIcon: Icon(Icons.search),
+                  prefixIcon: const Icon(Icons.search),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(30.0),
                     borderSide: BorderSide.none,
@@ -42,19 +44,19 @@ class ReferalPage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(30.0),
                     borderSide: BorderSide.none,
                   ),
-                  contentPadding:
-                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                  contentPadding: const EdgeInsets.symmetric(
+                      vertical: 10.0, horizontal: 20.0),
                 ),
               ),
             ),
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
             GestureDetector(
               onTap: () {},
               child: Container(
                 height: 200.0,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20.0),
-                  gradient: LinearGradient(
+                  gradient: const LinearGradient(
                     begin: Alignment.centerLeft,
                     end: Alignment.centerRight,
                     colors: [
@@ -64,7 +66,7 @@ class ReferalPage extends StatelessWidget {
                   ),
                 ),
                 child: Stack(
-                  children: [
+                  children: const [
                     Positioned(
                       bottom: 8.0,
                       right: 16.0,
@@ -80,14 +82,14 @@ class ReferalPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 16.0),
+            const SizedBox(height: 16.0),
             GestureDetector(
               onTap: () {},
               child: Container(
                 height: 200.0,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20.0),
-                  gradient: LinearGradient(
+                  gradient: const LinearGradient(
                     begin: Alignment.centerLeft,
                     end: Alignment.centerRight,
                     colors: [
@@ -97,7 +99,7 @@ class ReferalPage extends StatelessWidget {
                   ),
                 ),
                 child: Stack(
-                  children: [
+                  children: const [
                     Positioned(
                       bottom: 8.0,
                       right: 16.0,
@@ -121,7 +123,7 @@ class ReferalPage extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(left: 25, top: 20, bottom: 10),
               child: Text(
                 'Invite Friends .',
@@ -133,7 +135,7 @@ class ReferalPage extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(right: 16),
+              padding: const EdgeInsets.only(right: 16),
               child: IconButton(
                 icon: Image.asset('assets/manush.png'),
                 onPressed: () {
