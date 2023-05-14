@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:zappe/contexts/controller.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:zappe/pages/home_page.dart';
 
 void main() {
