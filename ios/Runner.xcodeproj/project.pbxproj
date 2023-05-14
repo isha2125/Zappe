@@ -47,9 +47,8 @@
 		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B249D4A619D743398E07C168 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
-		B8120BA66165678657BAB836 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
-		C618A3144E38FFC1DFCAC0F0 /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
+		D67EB94B1624608C99267D18 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
+		E9D80A17FD78DFF1C866232D /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,19 +56,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9A1BA3C59E83C76525DEEE0 /* Pods_Runner.framework in Frameworks */,
+				4C55EA988836ACB96FB18556 /* Pods_Runner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3F0C006184BADA3401E98340 /* Pods */ = {
+		45BD233FEA8280AB440C22CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B249D4A619D743398E07C168 /* Pods-Runner.debug.xcconfig */,
-				B8120BA66165678657BAB836 /* Pods-Runner.release.xcconfig */,
-				C618A3144E38FFC1DFCAC0F0 /* Pods-Runner.profile.xcconfig */,
+				E9D80A17FD78DFF1C866232D /* Pods_Runner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69AFDED3EB0484F28AD893EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D67EB94B1624608C99267D18 /* Pods-Runner.debug.xcconfig */,
+				77B7FA7609743511290674EB /* Pods-Runner.release.xcconfig */,
+				2CC6B17731DA2405A3DE8DCA /* Pods-Runner.profile.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -92,8 +99,8 @@
 				9740EEB11CF90186004384FC /* Flutter */,
 				97C146F01CF9000F007C117D /* Runner */,
 				97C146EF1CF9000F007C117D /* Products */,
-				3F0C006184BADA3401E98340 /* Pods */,
-				F95056C47786DA395B524A5A /* Frameworks */,
+				69AFDED3EB0484F28AD893EA /* Pods */,
+				45BD233FEA8280AB440C22CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,14 +142,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "Runner" */;
 			buildPhases = (
-				ED6901C8C754B9C4B81F823B /* [CP] Check Pods Manifest.lock */,
+				37D59F10CAF02CAC31CAE519 /* [CP] Check Pods Manifest.lock */,
 				9740EEB61CF901F6004384FC /* Run Script */,
 				97C146EA1CF9000F007C117D /* Sources */,
 				97C146EB1CF9000F007C117D /* Frameworks */,
 				97C146EC1CF9000F007C117D /* Resources */,
 				9705A1C41CF9048500538489 /* Embed Frameworks */,
 				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
-				EB5B71B3780808AA33993AFF /* [CP] Embed Pods Frameworks */,
+				0B0D4AB0C159751EE6550642 /* [CP] Embed Pods Frameworks */,
+				446877E57ABB1DB70E0F42AB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
