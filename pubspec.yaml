@@ -43,7 +43,7 @@ dependencies:
   flutter_polyline_points: ^1.0.0
   google_maps_flutter: ^2.2.6
   location: ^4.4.0
-  google_maps_widget: ^1.0.5+1
+  
 
 dev_dependencies:
   flutter_test:
