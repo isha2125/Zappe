@@ -39,6 +39,8 @@ dependencies:
   flutter_svg: ^2.0.5
   intl: ^0.18.1
   week_of_year: ^2.0.0
+  google_fonts: ^4.0.4
+  google_maps_widget: ^1.0.5+1
 
 dev_dependencies:
   flutter_test:
@@ -76,7 +78,5 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-
-  
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
