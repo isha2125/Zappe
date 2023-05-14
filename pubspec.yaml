@@ -39,6 +39,7 @@ dependencies:
   intl: ^0.18.1
   week_of_year: ^2.0.0
   google_fonts: ^4.0.4
+  google_maps_widget: ^1.0.5+1
 
 dev_dependencies:
   flutter_test:
