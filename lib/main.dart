@@ -19,9 +19,6 @@ void main() {
       theme: ThemeData(
           primarySwatch: Colors.blue,
           textTheme: GoogleFonts.poppinsTextTheme()),
-      home: ReferalPage(),
-        primarySwatch: Colors.blue,
-      ),
       initialBinding: BindingsBuilder(() {
         Get.put(Controller());
       }),
