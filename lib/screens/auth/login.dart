@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:zappe/screens/auth/login.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:zappe/screens/auth/signup.dart';
 
@@ -22,7 +21,7 @@ class Login extends StatelessWidget {
             width: MediaQuery.of(context).size.width,
           ),
         ),
-        Positioned(
+        const Positioned(
           top: 170,
           left: 40,
           child: Text(
@@ -109,13 +108,14 @@ class Login extends StatelessWidget {
                   left: 159,
                   child: MaterialButton(
                     onPressed: () {},
-                    color: Color.fromARGB(255, 69, 131, 154),
+                    color: const Color.fromARGB(255, 69, 131, 154),
                     textColor: Colors.white,
-                    padding: EdgeInsets.symmetric(vertical: 9, horizontal: 60),
+                    padding:
+                        const EdgeInsets.symmetric(vertical: 9, horizontal: 60),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    child: Text(
+                    child: const Text(
                       'Login',
                       style: TextStyle(fontSize: 14),
                     ),
@@ -128,8 +128,8 @@ class Login extends StatelessWidget {
                     onPressed: () {},
                     color: Colors.white,
                     textColor: Colors.blue,
-                    padding: EdgeInsets.all(7.5),
-                    shape: CircleBorder(),
+                    padding: const EdgeInsets.all(7.5),
+                    shape: const CircleBorder(),
                     child: Image.asset(
                       'assets/g_logo.png',
                       height: 27.5,
@@ -143,8 +143,8 @@ class Login extends StatelessWidget {
                     onPressed: () {},
                     color: Colors.white,
                     textColor: Colors.blue,
-                    padding: EdgeInsets.all(7.5),
-                    shape: CircleBorder(),
+                    padding: const EdgeInsets.all(7.5),
+                    shape: const CircleBorder(),
                     child: Image.asset(
                       'assets/apple_logo.png',
                       height: 27.5,
@@ -156,18 +156,18 @@ class Login extends StatelessWidget {
                     left: 70,
                     child: Row(
                       children: [
-                        Text(
+                        const Text(
                           'Forgot password ?',
                           style: TextStyle(
                             fontSize: 14.0,
                           ),
                         ),
-                        SizedBox(width: 5.0),
+                        const SizedBox(width: 5.0),
                         TextButton(
                           onPressed: () {
                             // Forgot Password functionality
                           },
-                          child: Text(
+                          child: const Text(
                             'Click Here',
                             style: TextStyle(
                               fontSize: 14.0,
@@ -181,22 +181,23 @@ class Login extends StatelessWidget {
                   top: 320,
                   left: 90,
                   child: Row(children: [
-                    Text(
+                    const Text(
                       'New to Zappe ?',
                       style: TextStyle(
                         fontSize: 14.0,
                       ),
                     ),
-                    SizedBox(width: 5.0),
+                    const SizedBox(width: 5.0),
                     TextButton(
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => Signup()),
+                          MaterialPageRoute(
+                              builder: (context) => const Signup()),
                         );
                         // Forgot Password functionality
                       },
-                      child: Text(
+                      child: const Text(
                         'Sign Up',
                         style: TextStyle(
                           fontSize: 14.0,

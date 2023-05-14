@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
 class AboutPage extends StatelessWidget {
+  const AboutPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'About .',
           style: TextStyle(
             color: Colors.black,
@@ -18,15 +20,15 @@ class AboutPage extends StatelessWidget {
         toolbarHeight: 90.0,
       ),
       body: Container(
-        color: Color(0xFF98D5E4),
-        padding: EdgeInsets.all(16.0),
+        color: const Color(0xFF98D5E4),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            SizedBox(height: 100.0),
+            const SizedBox(height: 100.0),
             Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 border: Border(
                   bottom: BorderSide(
                     color: Colors.black,
@@ -36,7 +38,7 @@ class AboutPage extends StatelessWidget {
               ),
               child: TextButton(
                 onPressed: () {},
-                child: Text(
+                child: const Text(
                   'User Guidelines',
                   style: TextStyle(
                     fontSize: 20.0,
@@ -45,9 +47,9 @@ class AboutPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 16.0),
+            const SizedBox(height: 16.0),
             Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 border: Border(
                   bottom: BorderSide(
                     color: Colors.black,
@@ -57,7 +59,7 @@ class AboutPage extends StatelessWidget {
               ),
               child: TextButton(
                 onPressed: () {},
-                child: Text(
+                child: const Text(
                   'Privacy Policy',
                   style: TextStyle(
                     fontSize: 20.0,
@@ -66,9 +68,9 @@ class AboutPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 16.0),
+            const SizedBox(height: 16.0),
             Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 border: Border(
                   bottom: BorderSide(
                     color: Colors.black,
@@ -78,7 +80,7 @@ class AboutPage extends StatelessWidget {
               ),
               child: TextButton(
                 onPressed: () {},
-                child: Text(
+                child: const Text(
                   'Terms of Service',
                   style: TextStyle(
                     fontSize: 20.0,
@@ -87,9 +89,9 @@ class AboutPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 16.0),
+            const SizedBox(height: 16.0),
             Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 border: Border(
                   bottom: BorderSide(
                     color: Colors.black,
@@ -99,15 +101,15 @@ class AboutPage extends StatelessWidget {
               ),
               child: TextButton(
                 onPressed: () {},
-                child: Text(
+                child: const Text(
                   'Licences and Registrations',
                   style: TextStyle(fontSize: 20.0, color: Colors.black),
                 ),
               ),
             ),
-            SizedBox(height: 16.0),
+            const SizedBox(height: 16.0),
             Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 border: Border(
                   bottom: BorderSide(
                     color: Colors.black,
@@ -117,7 +119,7 @@ class AboutPage extends StatelessWidget {
               ),
               child: TextButton(
                 onPressed: () {},
-                child: Text(
+                child: const Text(
                   'App Version',
                   style: TextStyle(
                     fontSize: 20.0,

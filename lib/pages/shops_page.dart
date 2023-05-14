@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class shop extends StatelessWidget {
   const shop({super.key});
@@ -12,17 +10,17 @@ class shop extends StatelessWidget {
       length: 3,
       child: NestedScrollView(
           headerSliverBuilder: (context, innerBoxIsScrolled) => [
-                SliverAppBar(
+                const SliverAppBar(
                   backgroundColor: Colors.black,
                   title: Text("Shop_Name"),
                 )
               ],
           body: CustomScrollView(slivers: [
-            SliverToBoxAdapter(
+            const SliverToBoxAdapter(
               child: CustomTabBar(),
             ),
             SliverList(delegate: SliverChildBuilderDelegate((context, index) {
-              return ListTile(
+              return const ListTile(
                 title: Text("hello"),
               );
             })),
@@ -32,6 +30,8 @@ class shop extends StatelessWidget {
 }
 
 class CustomTabBar extends StatelessWidget {
+  const CustomTabBar({super.key});
+
   //const CustomTabBar({super.key});
 
   @override
@@ -43,14 +43,14 @@ class CustomTabBar extends StatelessWidget {
             0.08, //AppBar().preferredSize.height,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(50),
-          color: Color(0xffD9D9D9),
+          color: const Color(0xffD9D9D9),
         ),
         child: TabBar(
             labelColor: Colors.black,
             indicator: BoxDecoration(
                 borderRadius: BorderRadius.circular(50),
-                color: Color(0xff97979799)),
-            tabs: [
+                color: const Color(0xff979797)),
+            tabs: const [
               Tab(
                 text: "Scooties",
               ),
