@@ -8,9 +8,11 @@ import 'package:zappe/screens/drw_scr/faqs.dart';
 import 'package:zappe/screens/drw_scr/referal.dart';
 import 'package:zappe/screens/splash/splash.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:zappe/pages/home_page.dart';
+// import 'package:zappe/screens/splash/splash.dart';
 
 void main() {
-  Get.put(Controller());
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(
     GetMaterialApp(
       title: "Zappe",
@@ -18,6 +20,13 @@ void main() {
           primarySwatch: Colors.blue,
           textTheme: GoogleFonts.poppinsTextTheme()),
       home: ReferalPage(),
+        primarySwatch: Colors.blue,
+      ),
+      initialBinding: BindingsBuilder(() {
+        Get.put(Controller());
+      }),
+      // home: Splash(),
+      home: const HomePage(),
     ),
   );
 }
