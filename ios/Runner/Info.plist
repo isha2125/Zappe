@@ -8,6 +8,8 @@
 	<string>Zappe</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
+  <key>NSLocationWhenInUseUsageDescription</key>
+  <string>$(EXECUTABLE_NAME) needs access to your location</string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
