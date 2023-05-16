@@ -179,7 +179,37 @@ class Payment extends StatelessWidget {
             ListTile(
               leading: const Icon(CupertinoIcons.creditcard, size: 32),
               title: const Text("Pay Online"),
-              onTap: () {},
+              onTap: () {
+                showDialog(
+                  context: context,
+                  builder: (context) {
+                    return AlertDialog(
+                      backgroundColor: Colors.white,
+                      shadowColor: Colors.black.withOpacity(0.2),
+                      title: const Text("Booking Successful"),
+                      content: const Text(
+                        "Your booking has been confirmed. You can view your booking details in the trips section.",
+                      ),
+                      actions: [
+                        ElevatedButton(
+                          onPressed: () {
+                            Get.offAllNamed("/booking", arguments: {
+                              "booked": true,
+                            });
+                          },
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.black,
+                            foregroundColor: Colors.white,
+                          ),
+                          child: const Text(
+                            "OK",
+                          ),
+                        ),
+                      ],
+                    );
+                  },
+                );
+              },
               subtitle: const Text("Pay with Card or UPI"),
               trailing: const Icon(Icons.arrow_forward_ios),
               shape: RoundedRectangleBorder(
@@ -189,7 +219,37 @@ class Payment extends StatelessWidget {
             ListTile(
               leading: const Icon(CupertinoIcons.money_dollar, size: 32),
               title: const Text("Cash"),
-              onTap: () {},
+              onTap: () {
+                showDialog(
+                  context: context,
+                  builder: (context) {
+                    return AlertDialog(
+                      backgroundColor: Colors.white,
+                      shadowColor: Colors.black.withOpacity(0.2),
+                      title: const Text("Booking Successful"),
+                      content: const Text(
+                        "Your booking has been confirmed. You can view your booking details in the trips section.",
+                      ),
+                      actions: [
+                        ElevatedButton(
+                          onPressed: () {
+                            Get.offAllNamed("/booking", arguments: {
+                              "booked": true,
+                            });
+                          },
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.black,
+                            foregroundColor: Colors.white,
+                          ),
+                          child: const Text(
+                            "OK",
+                          ),
+                        ),
+                      ],
+                    );
+                  },
+                );
+              },
               subtitle: const Text("Pay with cash"),
               trailing: const Icon(Icons.arrow_forward_ios),
               shape: RoundedRectangleBorder(

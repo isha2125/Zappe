@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
 import 'package:zappe/screens/auth/signup.dart';
 
 class Login extends StatelessWidget {
@@ -107,7 +108,9 @@ class Login extends StatelessWidget {
                   top: 260,
                   left: 159,
                   child: MaterialButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.offAllNamed('/');
+                    },
                     color: const Color.fromARGB(255, 69, 131, 154),
                     textColor: Colors.white,
                     padding:
@@ -190,11 +193,7 @@ class Login extends StatelessWidget {
                     const SizedBox(width: 5.0),
                     TextButton(
                       onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const Signup()),
-                        );
+                        Get.offAll(const Signup());
                         // Forgot Password functionality
                       },
                       child: const Text(

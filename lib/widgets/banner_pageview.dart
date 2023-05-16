@@ -61,7 +61,7 @@ class BannerPageView extends StatelessWidget {
                           ),
                         );
                       },
-                      child: Uri.tryParse(banner.imageUrl) != null
+                      child: banner.imageUrl.startsWith('https://')
                           ? Image.network(
                               banner.imageUrl,
                               fit: BoxFit.cover,
