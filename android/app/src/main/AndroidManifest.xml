@@ -4,6 +4,8 @@
         android:label="zappe"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        <meta-data android:name="com.google.android.geo.API_KEY"
+               android:value="AIzaSyAnaA-Yuv4TiBaN24CO8jbViMymKrPHUeo"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -29,9 +31,15 @@
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
         <meta-data
             android:name="flutterEmbedding"
+<<<<<<< HEAD
             android:value="2"
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAnaA-Yuv4TiBaN24CO8jbViMymKrPHUeo"
              />
+=======
+            android:value="2" />
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAnaA-Yuv4TiBaN24CO8jbViMymKrPHUeo"/>
+>>>>>>> origin/main
     </application>
 </manifest>
