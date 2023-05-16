@@ -39,7 +39,9 @@ class ShopListTile extends StatelessWidget {
       child: InkWell(
         splashColor: Colors.grey.shade200,
         borderRadius: BorderRadius.circular(8),
-        onTap: () {},
+        onTap: () {
+          Get.toNamed('/payment');
+        },
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8),

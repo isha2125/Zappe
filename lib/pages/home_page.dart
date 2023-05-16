@@ -6,6 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:uicons_brands/uicons_brands.dart';
 import 'package:zappe/components/datetime_picker.dart';
 import 'package:zappe/contexts/controller.dart';
+import 'package:zappe/screens/auth/login.dart';
 import 'package:zappe/screens/home/home.dart';
 
 class HomePage extends StatelessWidget {
@@ -140,7 +141,7 @@ class HomePage extends StatelessWidget {
                           const EdgeInsets.symmetric(horizontal: 32),
                       minLeadingWidth: 36,
                       onTap: () {
-                        Get.back();
+                        Get.toNamed("/accounts");
                       },
                     ),
                     ListTile(
@@ -159,7 +160,7 @@ class HomePage extends StatelessWidget {
                           const EdgeInsets.symmetric(horizontal: 32),
                       minLeadingWidth: 36,
                       onTap: () {
-                        Get.back();
+                        Get.toNamed("/subscriptions");
                       },
                     ),
                     ListTile(
@@ -178,7 +179,7 @@ class HomePage extends StatelessWidget {
                           const EdgeInsets.symmetric(horizontal: 32),
                       minLeadingWidth: 36,
                       onTap: () {
-                        Get.back();
+                        Get.toNamed("/trips");
                       },
                     ),
                     const SizedBox(
@@ -209,7 +210,7 @@ class HomePage extends StatelessWidget {
                           const EdgeInsets.symmetric(horizontal: 32),
                       minLeadingWidth: 36,
                       onTap: () {
-                        Get.back();
+                        Get.toNamed("/faq");
                       },
                     ),
                     ListTile(
@@ -228,7 +229,7 @@ class HomePage extends StatelessWidget {
                           const EdgeInsets.symmetric(horizontal: 32),
                       minLeadingWidth: 36,
                       onTap: () {
-                        Get.back();
+                        Get.toNamed("/referal");
                       },
                     ),
                     ListTile(
@@ -247,7 +248,7 @@ class HomePage extends StatelessWidget {
                           const EdgeInsets.symmetric(horizontal: 32),
                       minLeadingWidth: 36,
                       onTap: () {
-                        Get.back();
+                        Get.toNamed("/about");
                       },
                     ),
                     const SizedBox(
@@ -278,7 +279,7 @@ class HomePage extends StatelessWidget {
                       contentPadding:
                           const EdgeInsets.symmetric(horizontal: 32),
                       onTap: () {
-                        Get.back();
+                        Get.to(const Login());
                       },
                     ),
                     const Spacer(),
