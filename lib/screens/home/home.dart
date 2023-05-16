@@ -45,6 +45,34 @@ List<Shop> shopData = [
     'isOpen': true,
     'openingHours': '8am - 6pm',
   },
+  {
+    'imageUrl':
+        'https://cdn.discordapp.com/attachments/1102878803887407184/1102898924135661608/pexels-yurii-hlei-1545743.jpg',
+    'shopName': '123 Bike Rentals',
+    'rating': 3.5,
+    'shopDescription': 'Rent a bike and explore the city.',
+    'price': 20.0,
+    'discountPrice': 16.0,
+    'discountPercentage': 20,
+    'licensedVehicles': ['Road Bike'],
+    'address': '789 Oak St, Anytown, USA',
+    'isOpen': true,
+    'openingHours': '8am - 6pm',
+  },
+  {
+    'imageUrl':
+        'https://cdn.discordapp.com/attachments/1102878803887407184/1102898924135661608/pexels-yurii-hlei-1545743.jpg',
+    'shopName': '123 Bike Rentals',
+    'rating': 3.5,
+    'shopDescription': 'Rent a bike and explore the city.',
+    'price': 20.0,
+    'discountPrice': 16.0,
+    'discountPercentage': 20,
+    'licensedVehicles': ['Road Bike'],
+    'address': '789 Oak St, Anytown, USA',
+    'isOpen': true,
+    'openingHours': '8am - 6pm',
+  },
 ]
     .map(
       (e) => Shop(
@@ -70,10 +98,8 @@ class Home extends StatelessWidget {
     final banners = List.filled(
       3,
       MBanner(
-        imageUrl:
-            "https://media.discordapp.net/attachments/1102878803887407184/1102878939346649129/pexels-sebastian-arie-voortman-214574_1.jpg?width=1280&height=720",
-        gotoUrl:
-            "https://media.discordapp.net/attachments/1102878803887407184/1102878939346649129/pexels-sebastian-arie-voortman-214574_1.jpg?width=1280&height=720",
+        imageUrl: "assets/banner.png",
+        gotoUrl: "Will open the respective page",
       ),
     );
     return CustomScrollView(
@@ -101,7 +127,22 @@ class Home extends StatelessWidget {
         SliverList(
           delegate: SliverChildBuilderDelegate(
             (context, index) {
-              return ShopListTile(shop: shopData[index]);
+              return Flex(
+                direction: Axis.vertical,
+                children: [
+                  if (index < shopData.length && index != 0)
+                    const SizedBox(
+                      height: 16,
+                    ),
+                  ShopListTile(shop: shopData[index]),
+                  if (index != shopData.length - 1)
+                    const Divider(
+                      indent: 16,
+                      endIndent: 16,
+                      height: 0,
+                    ),
+                ],
+              );
             },
             childCount: shopData.length,
           ),
