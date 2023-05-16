@@ -141,7 +141,11 @@ class AboutPage extends StatelessWidget {
               bottom: 150.0,
               child: IconButton(
                 onPressed: () {},
-                icon: Image.asset('assets/insta.png'),
+                icon: Image.asset(
+                  'assets/insta.png',
+                  height: 37,
+                  width: 37,
+                ),
               ),
             ),
             Positioned(

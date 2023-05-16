@@ -38,28 +38,28 @@ class TripsPage extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
                 margin: const EdgeInsets.only(
-                    left: 40, right: 40, top: 10, bottom: 10),
+                    left: 30, right: 30, top: 10, bottom: 10),
                 child: InkWell(
                   onTap: () {
                     // Handle button tap
                   },
                   child: Container(
                     padding: const EdgeInsets.only(
-                        left: 5, right: 5, bottom: 10, top: 30),
+                        left: 5, right: 5, bottom: 5, top: 5),
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Container(
-                          height: 120,
+                          height: 200,
                           child: GoogleMap(
                             initialCameraPosition: CameraPosition(
-                              target: LatLng(37.7749, -122.4194),
-                              zoom: 12.0,
+                              target: LatLng(12.8217893, 80.039836),
+                              zoom: 17.0,
                             ),
                             markers: {
                               Marker(
                                 markerId: MarkerId('marker_1'),
-                                position: LatLng(37.7749, -122.4194),
+                                position: LatLng(12.8217893, 80.039836),
                               ),
                             },
                           ),

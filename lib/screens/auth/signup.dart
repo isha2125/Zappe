@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
+import 'package:zappe/screens/auth/login.dart';
 
 class Signup extends StatelessWidget {
   const Signup({super.key});
@@ -166,7 +168,7 @@ class Signup extends StatelessWidget {
                       ),
                     )),
                 Positioned(
-                  top: 350,
+                  top: 330,
                   left: 159,
                   child: MaterialButton(
                     onPressed: () {},
@@ -184,7 +186,7 @@ class Signup extends StatelessWidget {
                   ),
                 ),
                 Positioned(
-                  top: 350,
+                  top: 330,
                   left: 10,
                   child: MaterialButton(
                     onPressed: () {},
@@ -199,7 +201,7 @@ class Signup extends StatelessWidget {
                   ),
                 ),
                 Positioned(
-                  top: 350,
+                  top: 330,
                   left: 70,
                   child: MaterialButton(
                     onPressed: () {},
@@ -212,6 +214,32 @@ class Signup extends StatelessWidget {
                       height: 27.5,
                     ),
                   ),
+                ),
+                Positioned(
+                  top: 370,
+                  left: 60,
+                  child: Row(children: [
+                    const Text(
+                      'Already have an account ?',
+                      style: TextStyle(
+                        fontSize: 14.0,
+                      ),
+                    ),
+                    const SizedBox(width: 5.0),
+                    TextButton(
+                      onPressed: () {
+                        Get.offAll(const Login());
+                        // Forgot Password functionality
+                      },
+                      child: const Text(
+                        'Log In',
+                        style: TextStyle(
+                          fontSize: 14.0,
+                          color: Colors.blue,
+                        ),
+                      ),
+                    ),
+                  ]),
                 )
               ]),
             ),
