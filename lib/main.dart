@@ -8,6 +8,7 @@ import 'package:zappe/pages/subscription_page.dart';
 import 'package:zappe/screens/booking/booking.dart';
 import 'package:zappe/screens/drw_scr/about.dart';
 import 'package:zappe/screens/drw_scr/faqs.dart';
+import 'package:zappe/screens/drw_scr/referal.dart';
 import 'package:zappe/screens/drw_scr/trips.dart';
 import 'package:zappe/screens/payment/payment.dart';
 import 'package:zappe/screens/splash/splash.dart';
@@ -35,8 +36,9 @@ void main() {
         "/about": (context) => const AboutPage(),
         "/trips": (context) => const Trips(),
         "/shop": (context) => const Shops(),
+        "/referal": (context) => const ReferalPage(),
       },
-      initialRoute: "/payment",
+      initialRoute: "/",
     ),
   );
 }
