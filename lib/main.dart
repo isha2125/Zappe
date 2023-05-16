@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:zappe/contexts/controller.dart';
 import 'package:zappe/pages/home_page.dart';
+import 'package:zappe/pages/shops_page.dart';
 import 'package:zappe/pages/subscription_page.dart';
 import 'package:zappe/screens/booking/booking.dart';
 import 'package:zappe/screens/drw_scr/about.dart';
@@ -33,6 +34,7 @@ void main() {
         "/faq": (context) => const FaqsPage(),
         "/about": (context) => const AboutPage(),
         "/trips": (context) => const Trips(),
+        "/shop": (context) => const Shops(),
       },
       initialRoute: "/splash",
     ),

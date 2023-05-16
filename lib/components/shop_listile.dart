@@ -40,7 +40,7 @@ class ShopListTile extends StatelessWidget {
         splashColor: Colors.grey.shade200,
         borderRadius: BorderRadius.circular(8),
         onTap: () {
-          Get.toNamed('/payment');
+          Get.toNamed('/booking');
         },
         child: Container(
           decoration: BoxDecoration(
