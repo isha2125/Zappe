@@ -118,13 +118,15 @@ class ReferalPage extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: BottomAppBar(
+      bottomSheet: Container(
+        height: 100.0,
         color: Colors.black,
         child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             const Padding(
-              padding: EdgeInsets.only(left: 25, top: 20, bottom: 10),
+              padding: EdgeInsets.only(left: 25, bottom: 10),
               child: Text(
                 'Invite Friends .',
                 style: TextStyle(
@@ -135,9 +137,12 @@ class ReferalPage extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(right: 16),
+              padding: const EdgeInsets.only(bottom: 20, right: 16),
               child: IconButton(
-                icon: Image.asset('assets/manush.png'),
+                icon: Image.asset(
+                  'assets/manush.png',
+                  height: 36,
+                ),
                 onPressed: () {
                   // Do something when the icon button is pressed
                 },
