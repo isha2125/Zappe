@@ -4,12 +4,22 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
+// ignore: must_be_immutable
 class Booking extends StatelessWidget {
   Booking({super.key});
 
   final Completer<GoogleMapController> _controller = Completer();
 
   static const LatLng sourceLocation = LatLng(37.33500926, -122.03272188);
+  Timer? timer;
+
+  get booked {
+    if (Get.arguments != null) {
+      return Get.arguments["booked"];
+    } else {
+      return false;
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +35,8 @@ class Booking extends StatelessWidget {
         ),
         leading: IconButton(
           onPressed: () {
-            Get.back();
+            timer?.cancel();
+            Get.offAndToNamed(Get.previousRoute);
           },
           icon: const Icon(
             Icons.arrow_back_ios,
@@ -129,10 +140,13 @@ class Booking extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
+                      // make button disabled when booked is true
                       ElevatedButton(
-                        onPressed: () {
-                          Get.toNamed("/payment");
-                        },
+                        onPressed: booked
+                            ? null
+                            : () {
+                                Get.toNamed("/payment");
+                              },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.black,
                           foregroundColor: Colors.white,
@@ -144,9 +158,9 @@ class Booking extends StatelessWidget {
                             borderRadius: BorderRadius.circular(8),
                           ),
                         ),
-                        child: const Text(
-                          "Confirm Booking",
-                          style: TextStyle(fontSize: 18),
+                        child: Text(
+                          booked ? "Collect the Vehicle" : "Confirm Booking",
+                          style: const TextStyle(fontSize: 18),
                         ),
                       ),
                     ],

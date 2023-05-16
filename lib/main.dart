@@ -36,7 +36,7 @@ void main() {
         "/trips": (context) => const Trips(),
         "/shop": (context) => const Shops(),
       },
-      initialRoute: "/splash",
+      initialRoute: "/payment",
     ),
   );
 }
