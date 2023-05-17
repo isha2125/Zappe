@@ -16,34 +16,34 @@ class shop extends StatelessWidget {
             pinned: false,
             snap: true,
             backgroundColor: Colors.black,
-            title: Text("Shop Name"),
+            title: const Text("Shop Name"),
             leading: IconButton(
-              icon: Icon(Icons.keyboard_arrow_left),
+              icon: const Icon(Icons.keyboard_arrow_left),
               onPressed: () {},
             ),
           ),
-          SliverToBoxAdapter(
+          const SliverToBoxAdapter(
             child: CustomTabBar(),
           ),
           SliverFillRemaining(
             child: Container(
-              color: Color.fromRGBO(55, 202, 236, 0.6),
+              color: const Color.fromRGBO(55, 202, 236, 0.6),
               child: TabBarView(children: [
                 ListView.builder(
                   itemBuilder: ((context, index) {
-                    return vehicleCard();
+                    return const vehicleCard();
                   }),
                   itemCount: 4,
                 ),
                 ListView.builder(
                   itemBuilder: ((context, index) {
-                    return vehicleCard();
+                    return const vehicleCard();
                   }),
                   itemCount: 4,
                 ),
                 ListView.builder(
                   itemBuilder: ((context, index) {
-                    return vehicleCard();
+                    return const vehicleCard();
                   }),
                   itemCount: 4,
                 )
@@ -57,6 +57,8 @@ class shop extends StatelessWidget {
 }
 
 class CustomTabBar extends StatelessWidget {
+  const CustomTabBar({super.key});
+
   //const CustomTabBar({super.key});
 
   @override
@@ -68,14 +70,14 @@ class CustomTabBar extends StatelessWidget {
             0.08, //AppBar().preferredSize.height,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(50),
-          color: Color(0xffD9D9D9),
+          color: const Color(0xffD9D9D9),
         ),
         child: TabBar(
             labelColor: Colors.black,
             indicator: BoxDecoration(
                 borderRadius: BorderRadius.circular(50),
-                color: Color(0xff97979799)),
-            tabs: [
+                color: const Color(0xff97979799)),
+            tabs: const [
               Tab(
                 text: "Scooties",
               ),
@@ -115,19 +117,19 @@ class vehicleCard extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.black,
                   elevation: 0,
-                  shape: RoundedRectangleBorder(
+                  shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.only(
                           bottomRight: Radius.circular(20),
                           topRight: Radius.circular(20)))),
               onPressed: () {},
-              child: Container(
+              child: SizedBox(
                 //color: Colors.black,
                 width: MediaQuery.of(context).size.width * 0.483,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Padding(
+                    const Padding(
                       padding: EdgeInsets.only(top: 8),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -141,18 +143,18 @@ class vehicleCard extends StatelessWidget {
                         ],
                       ),
                     ),
-                    Text(
+                    const Text(
                       "Vehicle Number",
                       style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.w600,
                           color: Color(0xff37CAEC)),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     RichText(
-                        text: TextSpan(
+                        text: const TextSpan(
                             text: "Serviced on:",
                             style: TextStyle(
                                 fontSize: 15, fontWeight: FontWeight.w300),
@@ -164,11 +166,11 @@ class vehicleCard extends StatelessWidget {
                                   fontWeight: FontWeight.w600,
                                   color: Color(0xff37CAEC)))
                         ])),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     RichText(
-                        text: TextSpan(
+                        text: const TextSpan(
                             text: "Serviced on:",
                             style: TextStyle(
                                 fontSize: 15, fontWeight: FontWeight.w300),
@@ -180,11 +182,11 @@ class vehicleCard extends StatelessWidget {
                                   fontWeight: FontWeight.w600,
                                   color: Color(0xff37CAEC)))
                         ])),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     RichText(
-                        text: TextSpan(
+                        text: const TextSpan(
                             text: "Serviced on:",
                             style: TextStyle(
                                 fontSize: 15, fontWeight: FontWeight.w300),
@@ -196,11 +198,11 @@ class vehicleCard extends StatelessWidget {
                                   fontWeight: FontWeight.w600,
                                   color: Color(0xff37CAEC)))
                         ])),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     RichText(
-                        text: TextSpan(
+                        text: const TextSpan(
                             text: "Serviced on:",
                             style: TextStyle(
                                 fontSize: 15, fontWeight: FontWeight.w300),
@@ -212,13 +214,13 @@ class vehicleCard extends StatelessWidget {
                                   fontWeight: FontWeight.w600,
                                   color: Color(0xff37CAEC)))
                         ])),
-                    SizedBox(
+                    const SizedBox(
                       height: 16,
                     ),
                     Padding(
                       padding: const EdgeInsets.only(bottom: 8.0),
                       child: RichText(
-                          text: TextSpan(
+                          text: const TextSpan(
                               text: "Pricing: ",
                               style: TextStyle(
                                   fontSize: 15, fontWeight: FontWeight.w300),

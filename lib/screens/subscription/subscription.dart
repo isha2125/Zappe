@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class subscriptiondescription extends StatelessWidget {
   const subscriptiondescription({super.key});
@@ -17,13 +15,13 @@ class subscriptiondescription extends StatelessWidget {
         //   onPressed: () {},
         // ),
         elevation: 0,
-        title: Text(
+        title: const Text(
           "Subscriptions",
           style: TextStyle(fontSize: 40),
           textAlign: TextAlign.center,
         ),
       ),
-      body: SubscriptionDeals(),
+      body: const SubscriptionDeals(),
       // body: Container(
       //   decoration: BoxDecoration(color: Color.fromARGB(55, 35, 190, 233)),
       //   child: subscriptiondescription(),
@@ -47,7 +45,7 @@ class SubscriptionDeals extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(color: Color.fromARGB(55, 35, 190, 233)),
+      decoration: const BoxDecoration(color: Color.fromARGB(55, 35, 190, 233)),
       child: Column(
         //mainAxisAlignment: MainAxisAlignment.spaceAround,
         //crossAxisAlignment: CrossAxisAlignment.center,
@@ -65,11 +63,11 @@ class SubscriptionDeals extends StatelessWidget {
                         borderRadius: BorderRadius.circular(8)),
                     child: Column(
                       children: [
-                        Container(
+                        SizedBox(
                           width: MediaQuery.of(context).size.width * 0.9,
                           //color: Colors.black,
-                          child: Padding(
-                            padding: const EdgeInsets.all(8),
+                          child: const Padding(
+                            padding: EdgeInsets.all(8),
                             child: Text(
                               "The Routiner",
                               style: TextStyle(
@@ -77,7 +75,7 @@ class SubscriptionDeals extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Row(
@@ -87,19 +85,19 @@ class SubscriptionDeals extends StatelessWidget {
                             Column(
                               children: [
                                 Container(
-                                  color: Color(0xffA2AEBC),
-                                  child: Text(
+                                  color: const Color(0xffA2AEBC),
+                                  child: const Text(
                                     "Trips",
                                     style: TextStyle(
                                         fontSize: 15,
                                         fontWeight: FontWeight.w300),
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 10,
                                 ),
                                 Container(
-                                  child: Text(
+                                  child: const Text(
                                     "60",
                                     style: TextStyle(
                                         fontSize: 12,
@@ -108,25 +106,25 @@ class SubscriptionDeals extends StatelessWidget {
                                 ),
                               ],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 30,
                             ),
                             Column(
                               children: [
                                 Container(
-                                  color: Color(0xffA2AEBC),
-                                  child: Text(
+                                  color: const Color(0xffA2AEBC),
+                                  child: const Text(
                                     "Trips",
                                     style: TextStyle(
                                         fontSize: 15,
                                         fontWeight: FontWeight.w300),
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 10,
                                 ),
                                 Container(
-                                  child: Text(
+                                  child: const Text(
                                     "Scooty",
                                     style: TextStyle(
                                         fontSize: 12,
@@ -135,25 +133,25 @@ class SubscriptionDeals extends StatelessWidget {
                                 ),
                               ],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 30,
                             ),
                             Column(
                               children: [
                                 Container(
-                                  color: Color(0xffA2AEBC),
-                                  child: Text(
+                                  color: const Color(0xffA2AEBC),
+                                  child: const Text(
                                     "Trips",
                                     style: TextStyle(
                                         fontSize: 15,
                                         fontWeight: FontWeight.w300),
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 10,
                                 ),
                                 Container(
-                                  child: Text(
+                                  child: const Text(
                                     "Pertrip renting",
                                     style: TextStyle(
                                         fontSize: 12,
@@ -164,15 +162,15 @@ class SubscriptionDeals extends StatelessWidget {
                             )
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Container(
                           decoration: BoxDecoration(
-                              color: Color(0xff23B5D3),
+                              color: const Color(0xff23B5D3),
                               borderRadius: BorderRadius.circular(8)),
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
+                          child: const Padding(
+                            padding: EdgeInsets.all(8.0),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -201,19 +199,19 @@ class SubscriptionDeals extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Row(
                           children: [
                             Container(
-                                padding: EdgeInsets.all(9),
+                                padding: const EdgeInsets.all(9),
                                 width: MediaQuery.of(context).size.width * 0.7,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                     color: Color(0xffA2AEBC),
                                     borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(8))),
-                                child: Text.rich(TextSpan(children: [
+                                child: const Text.rich(TextSpan(children: [
                                   TextSpan(
                                       text: "only at:\n",
                                       style: TextStyle(fontSize: 10)),
@@ -223,13 +221,13 @@ class SubscriptionDeals extends StatelessWidget {
                                 ]))),
                             Container(
                                 width: MediaQuery.of(context).size.width * 0.2,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                     color: Color(0xff23B5D3),
                                     borderRadius: BorderRadius.only(
                                       bottomRight: Radius.circular(8),
                                     )),
                                 child: TextButton(
-                                  child: Text(
+                                  child: const Text(
                                     "ACCESS",
                                     style: TextStyle(color: Colors.white),
                                   ),

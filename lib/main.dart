@@ -38,7 +38,7 @@ void main() {
         "/shop": (context) => const Shops(),
         "/referal": (context) => const ReferalPage(),
       },
-      initialRoute: "/login",
+      initialRoute: "/splash",
     ),
   );
 }

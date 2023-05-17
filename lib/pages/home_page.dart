@@ -88,10 +88,10 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(width: 16),
-                    Column(
+                    const Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
+                      children: [
                         Text(
                           "Rick Astley",
                           style: TextStyle(
@@ -329,9 +329,9 @@ class HomePage extends StatelessWidget {
                         const SizedBox(
                           height: 32,
                         ),
-                        Row(
+                        const Row(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: const [
+                          children: [
                             Text(
                               "Made with ",
                               style: TextStyle(

@@ -65,8 +65,8 @@ class ReferalPage extends StatelessWidget {
                     ],
                   ),
                 ),
-                child: Stack(
-                  children: const [
+                child: const Stack(
+                  children: [
                     Positioned(
                       bottom: 8.0,
                       right: 16.0,
@@ -98,8 +98,8 @@ class ReferalPage extends StatelessWidget {
                     ],
                   ),
                 ),
-                child: Stack(
-                  children: const [
+                child: const Stack(
+                  children: [
                     Positioned(
                       bottom: 8.0,
                       right: 16.0,

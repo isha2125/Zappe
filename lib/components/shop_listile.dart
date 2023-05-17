@@ -192,9 +192,9 @@ class ShopListTile extends StatelessWidget {
                           const SizedBox(height: 16),
                           Row(
                             children: [
-                              SizedBox(
+                              const SizedBox(
                                 child: Row(
-                                  children: const [
+                                  children: [
                                     Icon(
                                       Icons.location_on,
                                       color: Colors.black87,

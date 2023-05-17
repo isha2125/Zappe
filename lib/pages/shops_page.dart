@@ -1,7 +1,5 @@
 //shops_page.dart
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:zappe/screens/shop/shops.dart';
 
 class Shops extends StatelessWidget {

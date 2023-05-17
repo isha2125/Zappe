@@ -1,5 +1,4 @@
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:flutter/material.dart';
 import 'package:zappe/screens/location/location_access.dart';
 
 class LocationAccess extends StatelessWidget {

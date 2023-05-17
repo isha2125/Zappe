@@ -51,34 +51,34 @@ class TripsPage extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                              Text("27-02-2023",
+                              const Text("27-02-2023",
                                   style:
                                       TextStyle(fontWeight: FontWeight.bold)),
-                              SizedBox(width: 10),
-                              Text("|"),
-                              SizedBox(width: 10),
-                              Text(
+                              const SizedBox(width: 10),
+                              const Text("|"),
+                              const SizedBox(width: 10),
+                              const Text(
                                 "09:15 am",
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
-                              SizedBox(width: 65),
-                              Text("TN 10 AV 2345"),
-                              SizedBox(width: 10),
+                              const SizedBox(width: 65),
+                              const Text("TN 10 AV 2345"),
+                              const SizedBox(width: 10),
                               Image.asset(
                                 "assets/scooty.icon.png",
                                 height: 20,
                               )
                             ],
                           ),
-                          Container(
+                          SizedBox(
                             height: 150,
                             child: GoogleMap(
-                              initialCameraPosition: CameraPosition(
+                              initialCameraPosition: const CameraPosition(
                                 target: LatLng(12.8217893, 80.039836),
                                 zoom: 17.0,
                               ),
                               markers: {
-                                Marker(
+                                const Marker(
                                   markerId: MarkerId('marker_1'),
                                   position: LatLng(12.8217893, 80.039836),
                                 ),
@@ -86,21 +86,21 @@ class TripsPage extends StatelessWidget {
                             ),
                           ),
                           Row(children: [
-                            Text("Abode Valley "),
-                            SizedBox(width: 5),
+                            const Text("Abode Valley "),
+                            const SizedBox(width: 5),
                             Image.asset(
                               "assets/round.icon.png",
                               height: 15,
                             ),
-                            SizedBox(width: 150),
+                            const SizedBox(width: 150),
                             Image.asset(
                               "assets/blue.round.png",
                               height: 15,
                             ),
-                            SizedBox(width: 5),
-                            Text("SRM College")
+                            const SizedBox(width: 5),
+                            const Text("SRM College")
                           ]),
-                          Row(
+                          const Row(
                             children: [
                               Text("*violation charge"),
                               SizedBox(
@@ -152,34 +152,34 @@ class TripsPage extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                              Text("27-02-2023",
+                              const Text("27-02-2023",
                                   style:
                                       TextStyle(fontWeight: FontWeight.bold)),
-                              SizedBox(width: 10),
-                              Text("|"),
-                              SizedBox(width: 10),
-                              Text(
+                              const SizedBox(width: 10),
+                              const Text("|"),
+                              const SizedBox(width: 10),
+                              const Text(
                                 "09:15 am",
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
-                              SizedBox(width: 65),
-                              Text("TN 10 AV 4568"),
-                              SizedBox(width: 10),
+                              const SizedBox(width: 65),
+                              const Text("TN 10 AV 4568"),
+                              const SizedBox(width: 10),
                               Image.asset(
                                 "assets/scooty.icon.png",
                                 height: 20,
                               )
                             ],
                           ),
-                          Container(
+                          SizedBox(
                             height: 150,
                             child: GoogleMap(
-                              initialCameraPosition: CameraPosition(
+                              initialCameraPosition: const CameraPosition(
                                 target: LatLng(12.8217893, 80.039836),
                                 zoom: 17.0,
                               ),
                               markers: {
-                                Marker(
+                                const Marker(
                                   markerId: MarkerId('marker_1'),
                                   position: LatLng(12.8217893, 80.039836),
                                 ),
@@ -187,21 +187,21 @@ class TripsPage extends StatelessWidget {
                             ),
                           ),
                           Row(children: [
-                            Text("Estancia "),
-                            SizedBox(width: 5),
+                            const Text("Estancia "),
+                            const SizedBox(width: 5),
                             Image.asset(
                               "assets/round.icon.png",
                               height: 15,
                             ),
-                            SizedBox(width: 175),
+                            const SizedBox(width: 175),
                             Image.asset(
                               "assets/blue.round.png",
                               height: 15,
                             ),
-                            SizedBox(width: 5),
-                            Text("SRM College")
+                            const SizedBox(width: 5),
+                            const Text("SRM College")
                           ]),
-                          Row(
+                          const Row(
                             children: [
                               Text("*violation charge"),
                               SizedBox(
@@ -253,34 +253,34 @@ class TripsPage extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                              Text("27-02-2023",
+                              const Text("27-02-2023",
                                   style:
                                       TextStyle(fontWeight: FontWeight.bold)),
-                              SizedBox(width: 10),
-                              Text("|"),
-                              SizedBox(width: 10),
-                              Text(
+                              const SizedBox(width: 10),
+                              const Text("|"),
+                              const SizedBox(width: 10),
+                              const Text(
                                 "09:15 am",
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
-                              SizedBox(width: 65),
-                              Text("TN 10 AV 2345"),
-                              SizedBox(width: 10),
+                              const SizedBox(width: 65),
+                              const Text("TN 10 AV 2345"),
+                              const SizedBox(width: 10),
                               Image.asset(
                                 "assets/scooty.icon.png",
                                 height: 20,
                               )
                             ],
                           ),
-                          Container(
+                          SizedBox(
                             height: 150,
                             child: GoogleMap(
-                              initialCameraPosition: CameraPosition(
+                              initialCameraPosition: const CameraPosition(
                                 target: LatLng(12.8217893, 80.039836),
                                 zoom: 17.0,
                               ),
                               markers: {
-                                Marker(
+                                const Marker(
                                   markerId: MarkerId('marker_1'),
                                   position: LatLng(12.8217893, 80.039836),
                                 ),
@@ -288,21 +288,21 @@ class TripsPage extends StatelessWidget {
                             ),
                           ),
                           Row(children: [
-                            Text("Railway Station "),
-                            SizedBox(width: 5),
+                            const Text("Railway Station "),
+                            const SizedBox(width: 5),
                             Image.asset(
                               "assets/round.icon.png",
                               height: 15,
                             ),
-                            SizedBox(width: 135),
+                            const SizedBox(width: 135),
                             Image.asset(
                               "assets/blue.round.png",
                               height: 15,
                             ),
-                            SizedBox(width: 5),
-                            Text("SRM College")
+                            const SizedBox(width: 5),
+                            const Text("SRM College")
                           ]),
-                          Row(
+                          const Row(
                             children: [
                               Text("*violation charge"),
                               SizedBox(
@@ -354,41 +354,41 @@ class TripsPage extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                              Text("27-02-2023",
+                              const Text("27-02-2023",
                                   style:
                                       TextStyle(fontWeight: FontWeight.bold)),
-                              SizedBox(width: 10),
-                              Text("|"),
-                              SizedBox(width: 10),
-                              Text(
+                              const SizedBox(width: 10),
+                              const Text("|"),
+                              const SizedBox(width: 10),
+                              const Text(
                                 "09:15 am",
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
-                              SizedBox(width: 65),
-                              Text("TTN 10 AV 1345"),
-                              SizedBox(width: 9),
+                              const SizedBox(width: 65),
+                              const Text("TTN 10 AV 1345"),
+                              const SizedBox(width: 9),
                               Image.asset(
                                 "assets/scooty.icon.png",
                                 height: 20,
                               )
                             ],
                           ),
-                          Container(
+                          SizedBox(
                             height: 150,
                             child: GoogleMap(
-                              initialCameraPosition: CameraPosition(
+                              initialCameraPosition: const CameraPosition(
                                 target: LatLng(12.8217893, 80.039836),
                                 zoom: 17.0,
                               ),
                               markers: {
-                                Marker(
+                                const Marker(
                                   markerId: MarkerId('marker_2'),
                                   position: LatLng(12.8217893, 80.039836),
                                 ),
                               },
                             ),
                           ),
-                          Row(
+                          const Row(
                             children: [
                               Text("*violation charge"),
                               SizedBox(

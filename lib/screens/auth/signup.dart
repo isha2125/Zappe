@@ -182,7 +182,7 @@ class Signup extends StatelessWidget {
                           filled: true,
                           fillColor: Colors.white,
                           hintText: 'enter password',
-                          hintStyle: TextStyle(fontSize: 12),
+                          hintStyle: const TextStyle(fontSize: 12),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(30.0),
                             borderSide: BorderSide.none,
@@ -211,7 +211,7 @@ class Signup extends StatelessWidget {
                           filled: true,
                           fillColor: Colors.white,
                           hintText: 're-enter password',
-                          hintStyle: TextStyle(fontSize: 12),
+                          hintStyle: const TextStyle(fontSize: 12),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(30.0),
                             borderSide: BorderSide.none,

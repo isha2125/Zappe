@@ -69,37 +69,37 @@ class Payment extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(width: 32),
-                    SizedBox(
+                    const SizedBox(
                       height: 120,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text(
+                          Text(
                             "Honda Grazia",
                             style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          const SizedBox(height: 4),
-                          const Text(
+                          SizedBox(height: 4),
+                          Text(
                             "Qty: 1",
                             style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.w500,
                             ),
                           ),
-                          const SizedBox(height: 4),
-                          const Text(
+                          SizedBox(height: 4),
+                          Text(
                             "Time Taken: 1 hr",
                             style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.w500,
                             ),
                           ),
-                          const Spacer(),
+                          Spacer(),
                           Row(
-                            children: const [
+                            children: [
                               Text(
                                 "\$ 20.00",
                                 style: TextStyle(
@@ -141,9 +141,9 @@ class Payment extends StatelessWidget {
                         ),
                       ),
                     ),
-                    child: Row(
+                    child: const Row(
                       mainAxisSize: MainAxisSize.min,
-                      children: const [
+                      children: [
                         Text(
                           "View Offers",
                           style: TextStyle(
@@ -270,11 +270,11 @@ class Payment extends StatelessWidget {
         ),
         child: ListView(
           padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 28),
-          children: [
-            const SizedBox(height: 8),
+          children: const [
+            SizedBox(height: 8),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
+              children: [
                 Text(
                   "Grand Total",
                   style: TextStyle(
@@ -291,10 +291,10 @@ class Payment extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 4),
+            SizedBox(height: 4),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
+              children: [
                 Text(
                   "Coupon Discount",
                   style: TextStyle(
@@ -314,7 +314,7 @@ class Payment extends StatelessWidget {
               ],
             ),
             // horizontal line
-            const Padding(
+            Padding(
               padding: EdgeInsets.symmetric(vertical: 8),
               child: Divider(
                 color: Color.fromARGB(100, 0, 0, 0),
@@ -323,7 +323,7 @@ class Payment extends StatelessWidget {
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
+              children: [
                 Text(
                   "Net Payable",
                   style: TextStyle(
