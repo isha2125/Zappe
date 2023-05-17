@@ -4,8 +4,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class location extends StatelessWidget {
   const location({super.key});
-  static const _initialCameraPosition =
-      CameraPosition(target: LatLng(20.5937, 78.96), zoom: 0);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -64,7 +63,8 @@ class location extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 10.0), // Adds space between the buttons
+                  const SizedBox(
+                      height: 10.0), // Adds space between the buttons
                   SizedBox(
                     width: double.infinity,
                     child: OutlinedButton(
