@@ -55,53 +55,60 @@ class Login extends StatelessWidget {
                     width: 88,
                   ),
                 ),
-                const Positioned(
+                Positioned(
                     top: 110,
                     left: 30,
-                    child: SizedBox(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(30.0),
+                      ),
                       width: 285,
                       height: 35,
                       child: TextField(
-                        obscureText: true,
-                        cursorColor: Colors.black,
-                        cursorHeight: 15,
                         decoration: InputDecoration(
-                            filled: true,
-                            fillColor: Colors.white,
-                            contentPadding: EdgeInsets.symmetric(
-                                vertical: 12.5, horizontal: 10),
-                            hintStyle: TextStyle(fontSize: 12),
-                            hintText: "phone no/ mail id",
-                            border: InputBorder.none),
+                          filled: true,
+                          fillColor: Colors.white,
+                          hintText: 'phone no/email id',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                            borderSide: BorderSide.none,
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                            borderSide: BorderSide.none,
+                          ),
+                          contentPadding: const EdgeInsets.symmetric(
+                              vertical: 10.0, horizontal: 20.0),
+                        ),
                       ),
                     )),
-                const Positioned(
+                Positioned(
                     top: 160,
                     left: 30,
-                    child: SizedBox(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(30.0),
+                      ),
                       width: 285,
                       height: 35,
                       child: TextField(
-                        obscureText: false,
-                        cursorColor: Colors.black,
-                        cursorHeight: 15,
                         decoration: InputDecoration(
-                            filled: true,
-                            fillColor: Colors.white,
-                            contentPadding: EdgeInsets.symmetric(
-                                vertical: 12.5, horizontal: 10),
-                            hintStyle: TextStyle(fontSize: 12),
-                            hintText: "password",
-                            border: InputBorder.none,
-                            focusedBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Colors.transparent),
-                              borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(10),
-                                bottomLeft: Radius.circular(10),
-                                topRight: Radius.circular(10),
-                                bottomRight: Radius.circular(10),
-                              ),
-                            )),
+                          filled: true,
+                          fillColor: Colors.white,
+                          hintText: 'password',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                            borderSide: BorderSide.none,
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                            borderSide: BorderSide.none,
+                          ),
+                          contentPadding: const EdgeInsets.symmetric(
+                              vertical: 10.0, horizontal: 20.0),
+                        ),
                       ),
                     )),
                 Positioned(

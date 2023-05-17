@@ -55,116 +55,174 @@ class Signup extends StatelessWidget {
                     width: 88,
                   ),
                 ),
-                const Positioned(
+                Positioned(
                     top: 80,
                     left: 30,
-                    child: SizedBox(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(30.0),
+                      ),
                       width: 285,
-                      height: 30,
+                      height: 35,
                       child: TextField(
-                        obscureText: true,
-                        cursorColor: Colors.black,
-                        cursorHeight: 15,
                         decoration: InputDecoration(
-                            filled: true,
-                            fillColor: Colors.white,
-                            hintStyle: TextStyle(fontSize: 12),
-                            hintText: "Name",
-                            border: InputBorder.none),
+                          filled: true,
+                          fillColor: Colors.white,
+                          hintText: 'Name',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                            borderSide: BorderSide.none,
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                            borderSide: BorderSide.none,
+                          ),
+                          contentPadding: const EdgeInsets.symmetric(
+                              vertical: 10.0, horizontal: 20.0),
+                        ),
                       ),
                     )),
-                const Positioned(
+                Positioned(
                     top: 130,
                     left: 30,
-                    child: SizedBox(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(30.0),
+                      ),
                       width: 285,
-                      height: 30,
+                      height: 35,
                       child: TextField(
-                        obscureText: true,
-                        cursorColor: Colors.black,
-                        cursorHeight: 15,
                         decoration: InputDecoration(
-                            filled: true,
-                            fillColor: Colors.white,
-                            hintText: "Phone Number",
-                            hintStyle: TextStyle(fontSize: 12),
-                            border: InputBorder.none),
+                          filled: true,
+                          fillColor: Colors.white,
+                          hintText: 'Phone Number',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                            borderSide: BorderSide.none,
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                            borderSide: BorderSide.none,
+                          ),
+                          contentPadding: const EdgeInsets.symmetric(
+                              vertical: 10.0, horizontal: 20.0),
+                        ),
                       ),
                     )),
-                const Positioned(
+                Positioned(
                     top: 180,
                     left: 30,
-                    child: SizedBox(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(30.0),
+                      ),
                       width: 285,
-                      height: 30,
+                      height: 35,
                       child: TextField(
-                        obscureText: false,
-                        cursorColor: Colors.black,
-                        cursorHeight: 15,
                         decoration: InputDecoration(
-                            filled: true,
-                            fillColor: Colors.white,
-                            hintStyle: TextStyle(fontSize: 12),
-                            hintText: "E-mail ID",
-                            border: InputBorder.none),
+                          filled: true,
+                          fillColor: Colors.white,
+                          hintText: 'E-mail ID',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                            borderSide: BorderSide.none,
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                            borderSide: BorderSide.none,
+                          ),
+                          contentPadding: const EdgeInsets.symmetric(
+                              vertical: 10.0, horizontal: 20.0),
+                        ),
                       ),
                     )),
-                const Positioned(
+                Positioned(
                     top: 230,
                     left: 30,
-                    child: SizedBox(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(30.0),
+                      ),
                       width: 285,
-                      height: 30,
+                      height: 35,
                       child: TextField(
-                        obscureText: false,
-                        cursorColor: Colors.black,
-                        cursorHeight: 15,
                         decoration: InputDecoration(
-                            hintStyle: TextStyle(fontSize: 12),
-                            filled: true,
-                            fillColor: Colors.white,
-                            hintText: "Username",
-                            border: InputBorder.none),
+                          filled: true,
+                          fillColor: Colors.white,
+                          hintText: 'Username',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                            borderSide: BorderSide.none,
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                            borderSide: BorderSide.none,
+                          ),
+                          contentPadding: const EdgeInsets.symmetric(
+                              vertical: 10.0, horizontal: 20.0),
+                        ),
                       ),
                     )),
-                const Positioned(
+                Positioned(
                     top: 280,
                     left: 30,
-                    child: SizedBox(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(30.0),
+                      ),
                       width: 130,
-                      height: 30,
+                      height: 35,
                       child: TextField(
-                        obscureText: false,
-                        cursorColor: Colors.black,
-                        cursorHeight: 15,
                         decoration: InputDecoration(
-                            filled: true,
-                            fillColor: Colors.white,
-                            contentPadding: EdgeInsets.symmetric(
-                                vertical: 12.5, horizontal: 10),
-                            hintStyle: TextStyle(fontSize: 12),
-                            hintText: "enter password",
-                            border: InputBorder.none),
+                          filled: true,
+                          fillColor: Colors.white,
+                          hintText: 'enter password',
+                          hintStyle: TextStyle(fontSize: 12),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                            borderSide: BorderSide.none,
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                            borderSide: BorderSide.none,
+                          ),
+                          contentPadding: const EdgeInsets.symmetric(
+                              vertical: 10.0, horizontal: 20.0),
+                        ),
                       ),
                     )),
-                const Positioned(
+                Positioned(
                     top: 280,
                     left: 185,
-                    child: SizedBox(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(30.0),
+                      ),
                       width: 130,
-                      height: 30,
+                      height: 35,
                       child: TextField(
-                        obscureText: false,
-                        cursorColor: Colors.black,
-                        cursorHeight: 15,
                         decoration: InputDecoration(
-                            filled: true,
-                            fillColor: Colors.white,
-                            contentPadding: EdgeInsets.symmetric(
-                                vertical: 12.5, horizontal: 7.5),
-                            hintStyle: TextStyle(fontSize: 12),
-                            hintText: "re-enter password",
-                            border: InputBorder.none),
+                          filled: true,
+                          fillColor: Colors.white,
+                          hintText: 're-enter password',
+                          hintStyle: TextStyle(fontSize: 12),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                            borderSide: BorderSide.none,
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                            borderSide: BorderSide.none,
+                          ),
+                          contentPadding: const EdgeInsets.symmetric(
+                              vertical: 10.0, horizontal: 20.0),
+                        ),
                       ),
                     )),
                 Positioned(
