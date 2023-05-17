@@ -71,7 +71,7 @@ class TripsPage extends StatelessWidget {
                             ],
                           ),
                           Container(
-                            height: 200,
+                            height: 150,
                             child: GoogleMap(
                               initialCameraPosition: CameraPosition(
                                 target: LatLng(12.8217893, 80.039836),
@@ -85,6 +85,21 @@ class TripsPage extends StatelessWidget {
                               },
                             ),
                           ),
+                          Row(children: [
+                            Text("Abode Valley "),
+                            SizedBox(width: 5),
+                            Image.asset(
+                              "assets/round.icon.png",
+                              height: 15,
+                            ),
+                            SizedBox(width: 150),
+                            Image.asset(
+                              "assets/blue.round.png",
+                              height: 15,
+                            ),
+                            SizedBox(width: 5),
+                            Text("SRM College")
+                          ]),
                           Row(
                             children: [
                               Text("*violation charge"),
@@ -157,7 +172,7 @@ class TripsPage extends StatelessWidget {
                             ],
                           ),
                           Container(
-                            height: 200,
+                            height: 150,
                             child: GoogleMap(
                               initialCameraPosition: CameraPosition(
                                 target: LatLng(12.8217893, 80.039836),
@@ -171,6 +186,21 @@ class TripsPage extends StatelessWidget {
                               },
                             ),
                           ),
+                          Row(children: [
+                            Text("Estancia "),
+                            SizedBox(width: 5),
+                            Image.asset(
+                              "assets/round.icon.png",
+                              height: 15,
+                            ),
+                            SizedBox(width: 175),
+                            Image.asset(
+                              "assets/blue.round.png",
+                              height: 15,
+                            ),
+                            SizedBox(width: 5),
+                            Text("SRM College")
+                          ]),
                           Row(
                             children: [
                               Text("*violation charge"),
@@ -243,7 +273,7 @@ class TripsPage extends StatelessWidget {
                             ],
                           ),
                           Container(
-                            height: 200,
+                            height: 150,
                             child: GoogleMap(
                               initialCameraPosition: CameraPosition(
                                 target: LatLng(12.8217893, 80.039836),
@@ -257,6 +287,21 @@ class TripsPage extends StatelessWidget {
                               },
                             ),
                           ),
+                          Row(children: [
+                            Text("Railway Station "),
+                            SizedBox(width: 5),
+                            Image.asset(
+                              "assets/round.icon.png",
+                              height: 15,
+                            ),
+                            SizedBox(width: 135),
+                            Image.asset(
+                              "assets/blue.round.png",
+                              height: 15,
+                            ),
+                            SizedBox(width: 5),
+                            Text("SRM College")
+                          ]),
                           Row(
                             children: [
                               Text("*violation charge"),
@@ -329,7 +374,7 @@ class TripsPage extends StatelessWidget {
                             ],
                           ),
                           Container(
-                            height: 200,
+                            height: 150,
                             child: GoogleMap(
                               initialCameraPosition: CameraPosition(
                                 target: LatLng(12.8217893, 80.039836),
