@@ -14,27 +14,20 @@ class subscriptiondescription extends StatelessWidget {
         //   icon: Icon(Icons.arrow_back),
         //   onPressed: () {},
         // ),
-        elevation: 0,
+        elevation: 0, surfaceTintColor: Colors.transparent,
+        shadowColor: Colors.transparent,
         title: const Text(
           "Subscriptions",
           style: TextStyle(fontSize: 40),
           textAlign: TextAlign.center,
         ),
       ),
-      body: const SubscriptionDeals(),
-      // body: Container(
-      //   decoration: BoxDecoration(color: Color.fromARGB(55, 35, 190, 233)),
-      //   child: subscriptiondescription(),
-      //   // child: ListView(
-      //   //   children: [
-      //   //   //   ListView.builder(
-      //   //   //       itemCount: 3,
-      //   //   //       itemBuilder: (context, index) {
-      //   //   //         return SubscriptionDeals();
-      //   //   //       })
-      //   //   // ],
-      //   // ),
-      // ),
+      body: ListView.builder(
+        itemCount: 5,
+        itemBuilder: (context, index) {
+          return const SubscriptionDeals();
+        },
+      ),
     );
   }
 }
@@ -66,12 +59,21 @@ class SubscriptionDeals extends StatelessWidget {
                         SizedBox(
                           width: MediaQuery.of(context).size.width * 0.9,
                           //color: Colors.black,
-                          child: const Padding(
-                            padding: EdgeInsets.all(8),
-                            child: Text(
-                              "The Routiner",
-                              style: TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.w500),
+                          child: Container(
+                            decoration: const BoxDecoration(
+                                color: Colors.black,
+                                borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(8),
+                                    topRight: Radius.circular(8))),
+                            child: const Padding(
+                              padding: EdgeInsets.all(8),
+                              child: Text(
+                                "The Routiner",
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.w500,
+                                    color: Colors.white),
+                              ),
                             ),
                           ),
                         ),
@@ -205,7 +207,7 @@ class SubscriptionDeals extends StatelessWidget {
                         Row(
                           children: [
                             Container(
-                                padding: const EdgeInsets.all(9),
+                                padding: const EdgeInsets.all(7),
                                 width: MediaQuery.of(context).size.width * 0.7,
                                 decoration: const BoxDecoration(
                                     color: Color(0xffA2AEBC),

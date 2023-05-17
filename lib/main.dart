@@ -7,9 +7,11 @@ import 'package:zappe/pages/shops_page.dart';
 import 'package:zappe/pages/subscription_page.dart';
 import 'package:zappe/screens/booking/booking.dart';
 import 'package:zappe/screens/drw_scr/about.dart';
+import 'package:zappe/screens/drw_scr/account_pg.dart';
 import 'package:zappe/screens/drw_scr/faqs.dart';
 import 'package:zappe/screens/drw_scr/referal.dart';
 import 'package:zappe/screens/drw_scr/trips.dart';
+import 'package:zappe/screens/location/location_access.dart';
 import 'package:zappe/screens/payment/payment.dart';
 import 'package:zappe/screens/splash/splash.dart';
 
@@ -35,8 +37,10 @@ void main() {
         "/faq": (context) => const FaqsPage(),
         "/about": (context) => const AboutPage(),
         "/trips": (context) => const TripsPage(),
-        "/shop": (context) => const Shops(),
+        "/shop": (context) => const ShopsPg(),
         "/referal": (context) => const ReferalPage(),
+        "/accounts": (context) => const Account(),
+        "/location": (context) => const location(),
       },
       initialRoute: "/splash",
     ),

@@ -229,7 +229,9 @@ class Signup extends StatelessWidget {
                   top: 330,
                   left: 159,
                   child: MaterialButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.toNamed('/location');
+                    },
                     color: const Color.fromARGB(255, 69, 131, 154),
                     textColor: Colors.white,
                     padding: const EdgeInsets.symmetric(

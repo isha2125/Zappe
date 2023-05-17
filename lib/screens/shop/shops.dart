@@ -1,5 +1,7 @@
 //shops.dart
+
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class shop extends StatelessWidget {
   const shop({super.key});
@@ -15,11 +17,17 @@ class shop extends StatelessWidget {
             floating: true,
             pinned: false,
             snap: true,
-            backgroundColor: Colors.black,
-            title: const Text("Shop Name"),
+            backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+            title: const Text(
+              "Shop Name",
+              style:
+                  TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+            ),
             leading: IconButton(
               icon: const Icon(Icons.keyboard_arrow_left),
-              onPressed: () {},
+              onPressed: () {
+                Get.back();
+              },
             ),
           ),
           const SliverToBoxAdapter(
@@ -63,31 +71,41 @@ class CustomTabBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Container(
-        height: MediaQuery.of(context).size.height *
-            0.08, //AppBar().preferredSize.height,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(50),
-          color: const Color(0xffD9D9D9),
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.grey[200],
+        borderRadius: BorderRadius.circular(20.0),
+      ),
+      margin: const EdgeInsets.all(16.0),
+      child: TabBar(
+        labelColor: const Color(0xff37CAEC),
+        indicator: BoxDecoration(
+          borderRadius: BorderRadius.circular(30),
+          color: const Color.fromARGB(255, 255, 255, 255),
         ),
-        child: TabBar(
-            labelColor: Colors.black,
-            indicator: BoxDecoration(
-                borderRadius: BorderRadius.circular(50),
-                color: const Color(0xff97979799)),
-            tabs: const [
-              Tab(
-                text: "Scooties",
-              ),
-              Tab(
-                text: "Bikes",
-              ),
-              Tab(
-                text: "Cars",
-              )
-            ]),
+        tabs: const [
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            child: Text(
+              "Scooties",
+              style: TextStyle(fontSize: 16),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            child: Text(
+              "Bikes",
+              style: TextStyle(fontSize: 16),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            child: Text(
+              "Cars",
+              style: TextStyle(fontSize: 16),
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -102,141 +120,168 @@ class vehicleCard extends StatelessWidget {
       padding: const EdgeInsets.all(8.0),
       child: Container(
         decoration: BoxDecoration(
-            color: Colors.white, borderRadius: BorderRadius.circular(20)),
+            color: Colors.black, borderRadius: BorderRadius.circular(20)),
         child: Row(
           //mainAxisAlignment: MainAxisAlignment.start,
           //crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Center(
-              child: Image.asset(
-                "assets/scooty.png",
-                width: MediaQuery.of(context).size.width * 0.4,
+            Container(
+              decoration: const BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(20),
+                      bottomLeft: Radius.circular(20))),
+              child: Column(
+                children: [
+                  Image.asset(
+                    "assets/scooty.png",
+                    width: MediaQuery.of(context).size.width * 0.4,
+                  ),
+                  const Text(
+                    "Dio",
+                    style: TextStyle(fontSize: 23, fontWeight: FontWeight.w600),
+                  ),
+                  const Text(
+                    "TN 01 AB 2345",
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w600,
+                      //  color: Color(0xff37CAEC)),
+                    ),
+                  ),
+                ],
               ),
             ),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.black,
-                  elevation: 0,
-                  shape: const RoundedRectangleBorder(
-                      borderRadius: BorderRadius.only(
-                          bottomRight: Radius.circular(20),
-                          topRight: Radius.circular(20)))),
-              onPressed: () {},
-              child: SizedBox(
-                //color: Colors.black,
-                width: MediaQuery.of(context).size.width * 0.483,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Padding(
-                      padding: EdgeInsets.only(top: 8),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            "Vehicle Name",
+            Expanded(
+              child: Flex(
+                direction: Axis.vertical,
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  const SizedBox(
+                    height: 8,
+                  ),
+                  const Text(
+                    "Features",
+                    style: TextStyle(color: Colors.white, fontSize: 32),
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  RichText(
+                      text: const TextSpan(
+                          text: "Fuel Capacity:",
+                          style: TextStyle(
+                              fontSize: 15, fontWeight: FontWeight.w300),
+                          children: [
+                        TextSpan(
+                            text: " 20L",
                             style: TextStyle(
-                                fontSize: 23, fontWeight: FontWeight.w600),
-                          ),
-                          Icon(Icons.star_rounded)
+                                fontSize: 15,
+                                fontWeight: FontWeight.w600,
+                                color: Color(0xff37CAEC)))
+                      ])),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  RichText(
+                      text: const TextSpan(
+                          text: "Mileage: ",
+                          style: TextStyle(
+                              fontSize: 15, fontWeight: FontWeight.w300),
+                          children: [
+                        TextSpan(
+                            text: "50 kmpl",
+                            style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.w600,
+                                color: Color(0xff37CAEC)))
+                      ])),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  RichText(
+                      text: const TextSpan(
+                          text: "Top Speed:",
+                          style: TextStyle(
+                              fontSize: 15, fontWeight: FontWeight.w300),
+                          children: [
+                        TextSpan(
+                            text: "120kmph",
+                            style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.w600,
+                                color: Color(0xff37CAEC)))
+                      ])),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Container(
+                    //height: MediaQuery.of(context).size.height * 0.1,
+                    decoration: BoxDecoration(
+                      gradient: const RadialGradient(
+                        center: Alignment(0.2, 0.5333),
+                        radius: 4,
+                        colors: [
+                          Color.fromRGBO(35, 181, 211, 0.8),
+                          Color.fromRGBO(97, 0, 255, 0.8),
                         ],
                       ),
+                      borderRadius: BorderRadius.circular(8),
                     ),
-                    const Text(
-                      "Vehicle Number",
-                      style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.w600,
-                          color: Color(0xff37CAEC)),
-                    ),
-                    const SizedBox(
-                      height: 20,
-                    ),
-                    RichText(
-                        text: const TextSpan(
-                            text: "Serviced on:",
-                            style: TextStyle(
-                                fontSize: 15, fontWeight: FontWeight.w300),
-                            children: [
-                          TextSpan(
-                              text: " 30/05/23",
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w600,
-                                  color: Color(0xff37CAEC)))
-                        ])),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    RichText(
-                        text: const TextSpan(
-                            text: "Serviced on:",
-                            style: TextStyle(
-                                fontSize: 15, fontWeight: FontWeight.w300),
-                            children: [
-                          TextSpan(
-                              text: " 30/05/23",
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w600,
-                                  color: Color(0xff37CAEC)))
-                        ])),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    RichText(
-                        text: const TextSpan(
-                            text: "Serviced on:",
-                            style: TextStyle(
-                                fontSize: 15, fontWeight: FontWeight.w300),
-                            children: [
-                          TextSpan(
-                              text: " 30/05/23",
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w600,
-                                  color: Color(0xff37CAEC)))
-                        ])),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    RichText(
-                        text: const TextSpan(
-                            text: "Serviced on:",
-                            style: TextStyle(
-                                fontSize: 15, fontWeight: FontWeight.w300),
-                            children: [
-                          TextSpan(
-                              text: " 30/05/23",
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w600,
-                                  color: Color(0xff37CAEC)))
-                        ])),
-                    const SizedBox(
-                      height: 16,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 8.0),
+                    child: Padding(
+                      padding: const EdgeInsets.all(4.0),
                       child: RichText(
-                          text: const TextSpan(
-                              text: "Pricing: ",
-                              style: TextStyle(
-                                  fontSize: 15, fontWeight: FontWeight.w300),
-                              children: [
+                        text: const TextSpan(
+                          text: "Pricing: ",
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 15,
+                              fontWeight: FontWeight.w300),
+                          children: [
                             TextSpan(
-                                text: "\$\$",
-                                style: TextStyle(
-                                    fontSize: 15,
-                                    fontWeight: FontWeight.w600,
-                                    color: Color(0xff37CAEC)))
-                          ])),
+                              text: "Rs.175",
+                              style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.w600,
+                                color: Color.fromARGB(255, 0, 0, 0),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
                     ),
-                  ],
-                ),
+                  ),
+                  const SizedBox(
+                    height: 24,
+                  ),
+                  SizedBox(
+                    height: 47,
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Get.toNamed("/booking");
+                      },
+                      style: ElevatedButton.styleFrom(
+                        elevation: 0,
+                        backgroundColor: const Color(0xff37caec),
+                        shape: const RoundedRectangleBorder(
+                          borderRadius: BorderRadius.only(
+                            bottomRight: Radius.circular(19),
+                          ),
+                        ),
+                      ),
+                      child: const Text(
+                        "BOOK NOW",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.w600),
+                      ),
+                    ),
+                  ),
+                ],
               ),
-            )
+            ),
           ],
         ),
       ),

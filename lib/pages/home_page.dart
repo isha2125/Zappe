@@ -115,7 +115,7 @@ class HomePage extends StatelessWidget {
             Expanded(
               child: Container(
                 color: Colors.white,
-                child: Column(
+                child: ListView(
                   children: [
                     const Divider(
                       height: 1,

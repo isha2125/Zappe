@@ -116,7 +116,7 @@ class Login extends StatelessWidget {
                   left: 159,
                   child: MaterialButton(
                     onPressed: () {
-                      Get.offAllNamed('/');
+                      Get.toNamed('/location');
                     },
                     color: const Color.fromARGB(255, 69, 131, 154),
                     textColor: Colors.white,
