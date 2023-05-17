@@ -148,7 +148,7 @@ class TripsPage extends StatelessWidget {
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
                               SizedBox(width: 65),
-                              Text("TN 10 AV 2345"),
+                              Text("TN 10 AV 4568"),
                               SizedBox(width: 10),
                               Image.asset(
                                 "assets/scooty.icon.png",
@@ -178,9 +178,9 @@ class TripsPage extends StatelessWidget {
                                 width: 10,
                               ),
                               Text(
-                                "unpaid",
+                                "paid",
                                 style: TextStyle(
-                                    color: Colors.red,
+                                    color: Colors.green,
                                     fontWeight: FontWeight.bold),
                               ),
                               SizedBox(
@@ -320,8 +320,8 @@ class TripsPage extends StatelessWidget {
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
                               SizedBox(width: 65),
-                              Text("TN 10 AV 2345"),
-                              SizedBox(width: 10),
+                              Text("TTN 10 AV 1345"),
+                              SizedBox(width: 9),
                               Image.asset(
                                 "assets/scooty.icon.png",
                                 height: 20,
@@ -350,9 +350,9 @@ class TripsPage extends StatelessWidget {
                                 width: 10,
                               ),
                               Text(
-                                "unpaid",
+                                "paid",
                                 style: TextStyle(
-                                    color: Colors.red,
+                                    color: Colors.green,
                                     fontWeight: FontWeight.bold),
                               ),
                               SizedBox(
@@ -366,7 +366,7 @@ class TripsPage extends StatelessWidget {
                                 width: 125,
                               ),
                               Text(
-                                "Rs 50",
+                                "Rs 100",
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               )
                             ],
