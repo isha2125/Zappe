@@ -169,7 +169,7 @@ class SubscriptionDeals extends StatelessWidget {
                         ),
                         Container(
                           decoration: BoxDecoration(
-                              color: const Color(0xff23B5D3),
+                              color: const Color(0xff37caec),
                               borderRadius: BorderRadius.circular(8)),
                           child: const Padding(
                             padding: EdgeInsets.all(8.0),
