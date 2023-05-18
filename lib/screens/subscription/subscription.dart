@@ -81,18 +81,24 @@ class SubscriptionDeals extends StatelessWidget {
                           height: 10,
                         ),
                         Row(
-                          //crossAxisAlignment: CrossAxisAlignment.start,
-
                           children: [
                             Column(
                               children: [
                                 Container(
-                                  color: Color.fromARGB(255, 220, 224, 228),
-                                  child: const Text(
-                                    "trips",
-                                    style: TextStyle(
-                                        fontSize: 15,
-                                        fontWeight: FontWeight.w300),
+                                  decoration: BoxDecoration(
+                                    color: const Color.fromARGB(
+                                        255, 220, 224, 228),
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  child: const Padding(
+                                    padding: EdgeInsets.symmetric(
+                                        horizontal: 8, vertical: 4),
+                                    child: Text(
+                                      "trips",
+                                      style: TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.w300),
+                                    ),
                                   ),
                                 ),
                                 const SizedBox(
@@ -114,12 +120,20 @@ class SubscriptionDeals extends StatelessWidget {
                             Column(
                               children: [
                                 Container(
-                                  color: Color.fromARGB(255, 220, 224, 228),
-                                  child: const Text(
-                                    "vehicle",
-                                    style: TextStyle(
-                                        fontSize: 15,
-                                        fontWeight: FontWeight.w300),
+                                  decoration: BoxDecoration(
+                                    color: const Color.fromARGB(
+                                        255, 220, 224, 228),
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  child: const Padding(
+                                    padding: EdgeInsets.symmetric(
+                                        horizontal: 8, vertical: 4),
+                                    child: Text(
+                                      "vehicle",
+                                      style: TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.w300),
+                                    ),
                                   ),
                                 ),
                                 const SizedBox(
@@ -141,12 +155,20 @@ class SubscriptionDeals extends StatelessWidget {
                             Column(
                               children: [
                                 Container(
-                                  color: Color.fromARGB(255, 220, 224, 228),
-                                  child: const Text(
-                                    "model",
-                                    style: TextStyle(
-                                        fontSize: 15,
-                                        fontWeight: FontWeight.w300),
+                                  decoration: BoxDecoration(
+                                    color: const Color.fromARGB(
+                                        255, 220, 224, 228),
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  child: const Padding(
+                                    padding: EdgeInsets.symmetric(
+                                        horizontal: 8, vertical: 4),
+                                    child: Text(
+                                      "model",
+                                      style: TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.w300),
+                                    ),
                                   ),
                                 ),
                                 const SizedBox(

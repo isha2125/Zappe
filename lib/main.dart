@@ -42,7 +42,7 @@ void main() {
         "/accounts": (context) => const Account(),
         "/location": (context) => const location(),
       },
-      initialRoute: "/splash",
+      initialRoute: "/shop",
     ),
   );
 }
