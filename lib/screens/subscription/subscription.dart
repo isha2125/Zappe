@@ -71,7 +71,7 @@ class SubscriptionDeals extends StatelessWidget {
                                 "The Routiner",
                                 style: TextStyle(
                                     fontSize: 20,
-                                    fontWeight: FontWeight.w500,
+                                    fontWeight: FontWeight.bold,
                                     color: Colors.white),
                               ),
                             ),
@@ -87,9 +87,9 @@ class SubscriptionDeals extends StatelessWidget {
                             Column(
                               children: [
                                 Container(
-                                  color: const Color(0xffA2AEBC),
+                                  color: Color.fromARGB(255, 220, 224, 228),
                                   child: const Text(
-                                    "Trips",
+                                    "trips",
                                     style: TextStyle(
                                         fontSize: 15,
                                         fontWeight: FontWeight.w300),
@@ -114,9 +114,9 @@ class SubscriptionDeals extends StatelessWidget {
                             Column(
                               children: [
                                 Container(
-                                  color: const Color(0xffA2AEBC),
+                                  color: Color.fromARGB(255, 220, 224, 228),
                                   child: const Text(
-                                    "Trips",
+                                    "vehicle",
                                     style: TextStyle(
                                         fontSize: 15,
                                         fontWeight: FontWeight.w300),
@@ -127,7 +127,7 @@ class SubscriptionDeals extends StatelessWidget {
                                 ),
                                 Container(
                                   child: const Text(
-                                    "Scooty",
+                                    "moped",
                                     style: TextStyle(
                                         fontSize: 12,
                                         fontWeight: FontWeight.w300),
@@ -141,9 +141,9 @@ class SubscriptionDeals extends StatelessWidget {
                             Column(
                               children: [
                                 Container(
-                                  color: const Color(0xffA2AEBC),
+                                  color: Color.fromARGB(255, 220, 224, 228),
                                   child: const Text(
-                                    "Trips",
+                                    "model",
                                     style: TextStyle(
                                         fontSize: 15,
                                         fontWeight: FontWeight.w300),
@@ -169,34 +169,80 @@ class SubscriptionDeals extends StatelessWidget {
                         ),
                         Container(
                           decoration: BoxDecoration(
-                              color: const Color(0xff37caec),
+                              color: Color.fromARGB(255, 122, 213, 234),
                               borderRadius: BorderRadius.circular(8)),
                           child: const Padding(
                             padding: EdgeInsets.all(8.0),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(
-                                  "Details you need to know:",
-                                  style: TextStyle(
-                                      fontSize: 9, fontWeight: FontWeight.w500),
+                                Row(
+                                  children: [
+                                    Text(
+                                      "details you need to know:",
+                                      style: TextStyle(
+                                          fontSize: 9,
+                                          fontWeight: FontWeight.w600),
+                                    ),
+                                  ],
                                 ),
-                                Text(
-                                  "Each trip lasts for a maximum of 10 minutes.",
-                                  style: TextStyle(
-                                      fontSize: 9, fontWeight: FontWeight.w300),
+                                Row(
+                                  children: [
+                                    Image(
+                                      image: AssetImage(
+                                        "assets/round.icon.png",
+                                      ),
+                                      height: 8,
+                                    ),
+                                    SizedBox(
+                                      width: 5,
+                                    ),
+                                    Text(
+                                      "Each trip lasts for a maximum of 10 minutes.",
+                                      style: TextStyle(
+                                          fontSize: 9,
+                                          fontWeight: FontWeight.w300),
+                                    ),
+                                  ],
                                 ),
-                                Text(
-                                  "An additional fare of Rs. 10 will be charged for every 5 minutes delay \nbeyond the 10 minutes standard time.",
-                                  overflow: TextOverflow.fade,
-                                  style: TextStyle(
-                                      fontSize: 9, fontWeight: FontWeight.w400),
+                                Row(
+                                  children: [
+                                    Image(
+                                      image: AssetImage(
+                                        "assets/round.icon.png",
+                                      ),
+                                      height: 8,
+                                    ),
+                                    SizedBox(
+                                      width: 5,
+                                    ),
+                                    Text(
+                                      "An additional fare of Rs. 10 will be charged for every 5 minutes delay \nbeyond the 10 minutes standard time.",
+                                      style: TextStyle(
+                                          fontSize: 9,
+                                          fontWeight: FontWeight.w300),
+                                    ),
+                                  ],
                                 ),
-                                Text(
-                                  "First ride is available at 7:30 am and last ride is available at ... read more.",
-                                  style: TextStyle(
-                                      fontSize: 9, fontWeight: FontWeight.w400),
-                                )
+                                Row(
+                                  children: [
+                                    Image(
+                                      image: AssetImage(
+                                        "assets/round.icon.png",
+                                      ),
+                                      height: 8,
+                                    ),
+                                    SizedBox(
+                                      width: 5,
+                                    ),
+                                    Text(
+                                      "First ride is available at 7:30 am and last ride is available at ... read more.",
+                                      style: TextStyle(
+                                          fontSize: 9,
+                                          fontWeight: FontWeight.w300),
+                                    ),
+                                  ],
+                                ),
                               ],
                             ),
                           ),
@@ -210,7 +256,7 @@ class SubscriptionDeals extends StatelessWidget {
                                 padding: const EdgeInsets.all(7),
                                 width: MediaQuery.of(context).size.width * 0.7,
                                 decoration: const BoxDecoration(
-                                    color: Color(0xffA2AEBC),
+                                    color: Color.fromARGB(255, 220, 224, 228),
                                     borderRadius: BorderRadius.only(
                                         bottomLeft: Radius.circular(8))),
                                 child: const Text.rich(TextSpan(children: [
@@ -224,7 +270,7 @@ class SubscriptionDeals extends StatelessWidget {
                             Container(
                                 width: MediaQuery.of(context).size.width * 0.2,
                                 decoration: const BoxDecoration(
-                                    color: Color(0xff23B5D3),
+                                    color: Color.fromARGB(255, 122, 213, 234),
                                     borderRadius: BorderRadius.only(
                                       bottomRight: Radius.circular(8),
                                     )),
