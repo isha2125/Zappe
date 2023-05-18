@@ -11,8 +11,16 @@ class Account extends StatelessWidget {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.white,
-        title: const Text("Accounts"),
-        toolbarHeight: kToolbarHeight + 16,
+        title: const Text(
+          'Accounts .',
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 40.0,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        centerTitle: false,
+        toolbarHeight: 90.0,
         leading: IconButton(
           onPressed: () {
             Get.back();

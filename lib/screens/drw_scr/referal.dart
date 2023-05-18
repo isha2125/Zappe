@@ -8,10 +8,10 @@ class ReferalPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Referrals & Vouchers',
+          'Referrals & Vouchers .',
           style: TextStyle(
             color: Colors.black,
-            fontSize: 30.0,
+            fontSize: 35.0,
             fontWeight: FontWeight.bold,
           ),
         ),
