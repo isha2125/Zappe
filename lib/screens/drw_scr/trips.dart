@@ -9,7 +9,7 @@ class TripsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Trips',
+          'Trips .',
           style: TextStyle(
             color: Colors.black,
             fontSize: 40.0,

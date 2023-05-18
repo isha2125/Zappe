@@ -8,7 +8,7 @@ class FaqsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'FAQs',
+          'FAQs .',
           style: TextStyle(
             color: Colors.black,
             fontSize: 40.0,

@@ -17,7 +17,7 @@ class subscriptiondescription extends StatelessWidget {
         elevation: 0, surfaceTintColor: Colors.transparent,
         shadowColor: Colors.transparent,
         title: const Text(
-          "Subscriptions",
+          "Subscriptions .",
           style: TextStyle(fontSize: 40),
           textAlign: TextAlign.center,
         ),
