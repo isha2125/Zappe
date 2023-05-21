@@ -101,7 +101,7 @@ class Payment extends StatelessWidget {
                           Row(
                             children: [
                               Text(
-                                "\$ 20.00",
+                                "\Rs 20.00",
                                 style: TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
